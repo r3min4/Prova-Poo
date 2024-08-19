@@ -1,0 +1,23 @@
+
+        Console.Write("Digite um número positivo: ");
+        int n = int.Parse(Console.ReadLine());
+
+        if (n <= 0)
+        {
+            Console.WriteLine("Por favor, insira um número maior que zero.");
+            return;
+        }
+
+        int a = 0, b = 1, c = 0;
+
+        Console.Write("Sequência de Fibonacci: ");
+        while (c <= n)
+        {
+            Console.Write(c + " ");
+            c = a + b;
+            a = b;
+            b = c;
+        }
+    
+
+
