@@ -1,0 +1,37 @@
+List<string> nomes = new List<string>();
+
+        Console.WriteLine("Digite os nomes:");
+        while (true)
+        {
+            string nome = Console.ReadLine();
+            if (string.IsNullOrEmpty(nome))
+                break;
+            nomes.Add(nome);
+        }
+
+        BubbleSort(nomes);
+
+        Console.WriteLine("\nLista ordenada:");
+        foreach (string nome in nomes)
+        {
+            Console.WriteLine(nome);
+        }
+    }
+
+    static void BubbleSort(List<string> lista)
+    {
+        int n = lista.Count;
+        for (int i = 0; i < n - 1; i++)
+        {
+            for (int j = 0; j < n - i - 1; j++)
+            {
+                if (string.Compare(lista[j], lista[j + 1]) > 0)
+                {
+                    
+                    string temp = lista[j];
+                    lista[j] = lista[j + 1];
+                    lista[j + 1] = temp;
+                }
+            }
+        }
+}
