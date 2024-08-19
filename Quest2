@@ -1,0 +1,29 @@
+
+int n1;
+int n2;
+
+int resultado;
+
+Console.WriteLine(" ");
+
+n1 = Int.Parse(Console.ReadLine());
+
+Console.WriteLine(" ");
+
+n2 = int.Parse(Console.ReadLine());
+
+resultado=n1+n2;
+
+Console.WriteLine(resultado);
+
+resultado=n1-n2;
+
+Console.WriteLine(resultado);
+
+resultado=n1*n2;
+
+Console.WriteLine(resultado);
+
+resultado=n1/n2;
+
+Console.WriteLine(resultado);
